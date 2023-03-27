@@ -334,6 +334,7 @@ body {
 .advences-list-item-icon {
   display: flex;
   height: 112px;
+  margin-bottom: 8px;
   justify-content: center;
   align-items: center;
   background-color: var(--logo-secondary-color-light);
@@ -343,36 +344,10 @@ body {
   width: 64px;
   height: 64px;
 }
-/* .advences-list-item::before {
-  content: '';
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-bottom: 8px;
-  height: 112px;
-  background-image: url(../images/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 64px;
-  background-color: var(--logo-secondary-color-light);
-}
-
-.advences-list-item:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
-}
-.advences-list-item:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
-}
-.advences-list-item:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
-}
-.advences-list-item:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
-}
 
 .advences-list-item:not(:last-child) {
   margin-right: 40px;
-} */
+}
 .advences-list-item-header {
   margin-bottom: 8px;
 }
@@ -449,8 +424,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
   flex-wrap: wrap;
   gap: 24px;
   /* width: 40px;
