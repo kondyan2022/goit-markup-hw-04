@@ -156,7 +156,6 @@ body {
 .portfolio-filters-button:active {
   color: var(--button-text-color);
   background-color: var(--accent-link-color);
-  border: 0;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 
@@ -324,11 +323,11 @@ body {
 }
 .advences-list {
   display: flex;
-  gap: 40px;
+  gap: 24px;
 }
 
 .advences-list-item {
-  width: calc((100% - 120px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .advences-list-item-icon {
@@ -345,9 +344,6 @@ body {
   height: 64px;
 }
 
-.advences-list-item:not(:last-child) {
-  margin-right: 40px;
-}
 .advences-list-item-header {
   margin-bottom: 8px;
 }
@@ -400,25 +396,18 @@ body {
 .ourteam-list-item {
   width: calc((100% - 72px) / 4);
 
-  --color-net: var(--color-iris);
+  /* --color-net: var(--color-iris); */
   text-align: center;
   padding-bottom: 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: var(--primary-background-color);
 }
-.ourteam-list-item:hover,
-.ourteam-list-item:focus {
-  --color-net: var(--color-ocean);
-}
-.ourteam-person-foto {
-}
+
 .ourteam-person {
-  /* padding-bottom: 32px; */
   padding-top: 32px;
   padding-left: 16px;
   padding-right: 16px;
-  /* margin-bottom: 8px; */
 }
 .person-network-list {
   display: flex;
@@ -426,27 +415,26 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 24px;
-  /* width: 40px;
-  height: 40px; */
-  /* gap: 24px; */
 }
 .person-network-item {
-  /* width: 264px; */
+  width: 40px;
+  height: 40px;
 }
 .person-network-item-link {
-  display: block;
-  padding: 12px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  background-color: var(--color-net);
+  background-color: var(--color-iris);
 }
 
 .person-network-item-link:hover,
 .person-network-item-link:focus {
+  background-color: var(--color-ocean);
 }
 
-/* .person-network-item:not(:last-child) {
-  margin-right: 24px;
-} */
 .net-icon {
   display: block;
   width: 16px;
@@ -508,7 +496,6 @@ body {
 
 .portfolio-filters-button-list {
   display: flex;
-  /* width: auto; */
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
@@ -536,9 +523,6 @@ body {
   --portfolio-border-color: var(--color-cornflower);
 }
 
-.portfolio-list-item-image {
-  /* height: 1px; */
-}
 .portfolio-list-item-link:hover,
 .portfolio-list-item-link:focus {
   --portfolio-border-color: var(--color-cloud);
@@ -596,7 +580,7 @@ body {
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-dark);
 }
